@@ -1,7 +1,7 @@
 console.log('This is the app.js file in the public directory.')
 
 
-fetch('http://localhost:3000/weather?address=!').then((response)=>{
+fetch('/weather?address=!').then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             console.log('Error: ' + data.error); // Logging error message if any
@@ -26,7 +26,7 @@ weatherForm.addEventListener('submit', (event) => {
     messageOne.textContent = 'Loading...' // Displaying loading message in messageOne element
     messageTwo.textContent = '' // Clearing messageTwo element
 
-    fetch('http://localhost:3000/weather?address=' + location).then((response)=>{
+    fetch('/weather?address=' + location).then((response)=>{
     response.json().then((data)=>{
         if(data.error){
             messageOne.textContent=data.error // Displaying error message in messageOne element
