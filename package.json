@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A Node.js weather application that provides real-time weather information for any location",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weather",
+    "nodejs",
+    "express",
+    "api",
+    "geocoding"
+  ],
+  "author": "Vinay Bhatt",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "hbs": "^4.2.0",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
